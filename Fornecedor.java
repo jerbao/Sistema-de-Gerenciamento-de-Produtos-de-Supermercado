@@ -4,6 +4,11 @@ public class Fornecedor {
     private String nif;
     private String paisOrigem;
 
+    /**
+     * @param nomeEmpresa nome da empresa
+     * @param nif         número de identificação fiscal
+     * @param paisOrigem  país de origem
+     */
     public Fornecedor(String nomeEmpresa, String nif, String paisOrigem) {
         this.nomeEmpresa = nomeEmpresa;
         this.nif = nif;

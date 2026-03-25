@@ -3,8 +3,14 @@ public abstract class Produto {
     private String nome;
     private int codigoBarras;
     private double precoBase;
-    private Fornecedor fornecedor;
+    private Fornecedor fornecedor;//composição
 
+    /**
+     * @param nome         nome do produto
+     * @param codigoBarras código de barras
+     * @param precoBase    preço base
+     * @param fornecedor   fornecedor responsável
+     */
     public Produto(String nome, int codigoBarras, double precoBase, Fornecedor fornecedor) {
         this.nome = nome;
         this.codigoBarras = codigoBarras;

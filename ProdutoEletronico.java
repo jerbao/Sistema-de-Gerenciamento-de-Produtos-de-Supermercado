@@ -2,7 +2,15 @@ public class ProdutoEletronico extends Produto {
 
     private int mesesGarantia;
 
-    public ProdutoEletronico(String nome, int codigoBarras, double precoBase, Fornecedor fornecedor, int mesesGarantia) {
+    /**
+     * @param nome           nome do produto
+     * @param codigoBarras   código de barras
+     * @param precoBase      preço base
+     * @param fornecedor     fornecedor associado
+     * @param mesesGarantia  meses de garantia
+     */
+    public ProdutoEletronico(String nome, int codigoBarras, double precoBase,
+                             Fornecedor fornecedor, int mesesGarantia) {
         super(nome, codigoBarras, precoBase, fornecedor);
         this.mesesGarantia = mesesGarantia;
     }
