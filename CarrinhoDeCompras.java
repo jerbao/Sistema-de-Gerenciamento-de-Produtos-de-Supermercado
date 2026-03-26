@@ -18,9 +18,12 @@ public class CarrinhoDeCompras {
 
     public void processarCompra() {
         double total = 0.0;
+        System.out.println("--- Talão de Compras ---");
         for (Produto p : itens) {
-            total += p.calcularPrecoFinal();
+            double precoFinal = p.calcularPrecoFinal();
+            total += precoFinal;
+            System.out.printf("%s: R$ %.2f%n", p.getNome(), precoFinal);
         }
-        System.out.println("Valor total da compra: R$ " + total);
+        System.out.printf("Total: R$ %.2f%n", total);
     }
 }

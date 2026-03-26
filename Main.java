@@ -10,10 +10,6 @@ public class Main {
         ProdutoEletronico smartphone = new ProdutoEletronico(
                 "Smartphone", 2222, 1000.0, techGlobal, 24);
 
-        //Exibindo cálculo do preço final de cada item
-        System.out.println("Preço final do " + arroz.getNome() + ": R$ " + arroz.calcularPrecoFinal());
-        System.out.println("Preço final do " + smartphone.getNome() + ": R$ " + smartphone.calcularPrecoFinal());
-
         //Carrinho de compras
         CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
         carrinho.adicionarItem(arroz);
